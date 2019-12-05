@@ -28,16 +28,6 @@ public class HelloApiServiceImpl implements HelloApiService {
     }
 
     @Override
-    public void complex4(String projectId, Integer i, Zhou zhou, Generic<Cheng> chengGeneric) {
-        System.out.println(projectId);
-        System.out.println(i);
-        System.out.println(zhou);
-        System.out.println(chengGeneric);
-    }
-
-
-
-    @Override
     public void print(String str) {
         System.out.println(str);
     }
@@ -70,6 +60,14 @@ public class HelloApiServiceImpl implements HelloApiService {
         System.out.println(l1);
     }
 
+
+
+    @Override
+    public void list2(List<String> ids, Map<String, Zhou> map) {
+        System.out.println(ids);
+        System.out.println(map);
+    }
+
     @Override
     public void list(List<Zhou> l1, List<Cheng> l2, List<Generic<Zhou>> generics) {
         System.out.println(l1);
@@ -78,8 +76,17 @@ public class HelloApiServiceImpl implements HelloApiService {
     }
 
     @Override
-    public void list2(List<String> ids, Map<String, Zhou> map) {
-        System.out.println(ids);
-        System.out.println(map);
+    public void complex4(String projectId, Integer i, Zhou zhou, Generic<Cheng> chengGeneric) {
+        System.out.println(projectId);
+        System.out.println(i);
+        System.out.println(zhou);
+        System.out.println(chengGeneric);
+    }
+
+    @Override
+    public void multiGeneric(Generic<Cheng> chengGeneric, Generic<Zhou> zhouGeneric, List<Generic<Zhou>> generics) {
+        System.out.println(chengGeneric);
+        System.out.println(zhouGeneric);
+        System.out.println(generics);
     }
 }
