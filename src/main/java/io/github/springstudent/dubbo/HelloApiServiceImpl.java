@@ -16,7 +16,7 @@ import java.util.Map;
 @Component
 public class HelloApiServiceImpl implements HelloApiService {
 
-   /*@Override
+   @Override
     public void complex(Cheng cheng, Zhou zhou) {
         System.out.println(cheng);
         System.out.println(zhou);
@@ -57,7 +57,7 @@ public class HelloApiServiceImpl implements HelloApiService {
         System.out.println(cheng);
         System.out.println(i);
         System.out.println(chengGeneric);
-    }*/
+    }
 
     @Override
     public void list(List<String> l1, List<String> l2) {
