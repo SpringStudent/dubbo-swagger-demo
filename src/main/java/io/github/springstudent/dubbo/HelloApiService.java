@@ -13,7 +13,7 @@ import java.util.Map;
  */
 public interface HelloApiService {
 
-    void complex(Cheng cheng, Zhou zhou);
+    /*void complex(Cheng cheng, Zhou zhou);
 
     void complex2(Cheng cheng, String projectId, Zhou zhou);
 
@@ -23,10 +23,15 @@ public interface HelloApiService {
 
     void complex5(Zhou zhou, String projectId, Cheng cheng, Integer i, Generic<Cheng> chengGeneric);
 
+    void print(String str);*/
+
     void list(List<String> l1, List<String> l2);
+
+    void list(List<String> l1);
+
+    void list(List<Zhou> l1,List<Cheng> l2,List<Generic<Zhou>> generics);
 
     void list2(List<String> ids, Map<String, Zhou> map);
 
-    void print(String str);
 
 }

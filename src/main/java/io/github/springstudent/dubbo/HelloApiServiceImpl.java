@@ -16,7 +16,7 @@ import java.util.Map;
 @Component
 public class HelloApiServiceImpl implements HelloApiService {
 
-   @Override
+   /*@Override
     public void complex(Cheng cheng, Zhou zhou) {
         System.out.println(cheng);
         System.out.println(zhou);
@@ -27,8 +27,6 @@ public class HelloApiServiceImpl implements HelloApiService {
         System.out.println(projectId);
     }
 
-
-
     @Override
     public void complex4(String projectId, Integer i, Zhou zhou, Generic<Cheng> chengGeneric) {
         System.out.println(projectId);
@@ -37,17 +35,7 @@ public class HelloApiServiceImpl implements HelloApiService {
         System.out.println(chengGeneric);
     }
 
-    @Override
-    public void list(List<String> l1, List<String> l2) {
-        System.out.println(l1);
-        System.out.println(l2);
-    }
 
-    @Override
-    public void list2(List<String> ids, Map<String, Zhou> map) {
-        System.out.println(ids);
-        System.out.println(map);
-    }
 
     @Override
     public void print(String str) {
@@ -69,5 +57,29 @@ public class HelloApiServiceImpl implements HelloApiService {
         System.out.println(cheng);
         System.out.println(i);
         System.out.println(chengGeneric);
+    }*/
+
+    @Override
+    public void list(List<String> l1, List<String> l2) {
+        System.out.println(l1);
+        System.out.println(l2);
+    }
+
+    @Override
+    public void list(List<String> l1) {
+        System.out.println(l1);
+    }
+
+    @Override
+    public void list(List<Zhou> l1, List<Cheng> l2, List<Generic<Zhou>> generics) {
+        System.out.println(l1);
+        System.out.println(l2);
+        System.out.println(generics);
+    }
+
+    @Override
+    public void list2(List<String> ids, Map<String, Zhou> map) {
+        System.out.println(ids);
+        System.out.println(map);
     }
 }
