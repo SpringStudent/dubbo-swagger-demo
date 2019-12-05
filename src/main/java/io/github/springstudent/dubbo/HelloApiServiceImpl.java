@@ -1,9 +1,13 @@
 package io.github.springstudent.dubbo;
 
 import com.alibaba.dubbo.config.annotation.Service;
+import io.github.springstudent.bean.Cheng;
+import io.github.springstudent.bean.Generic;
+import io.github.springstudent.bean.Zhou;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author 周宁
@@ -11,17 +15,59 @@ import java.util.List;
 @Service(interfaceClass = HelloApiService.class)
 @Component
 public class HelloApiServiceImpl implements HelloApiService {
-    @Override
-    public String say(String message) {
-        return message;
+
+   @Override
+    public void complex(Cheng cheng, Zhou zhou) {
+        System.out.println(cheng);
+        System.out.println(zhou);
     }
 
     @Override
-    public void print(List<String> stringList) {
-        String result="";
-        for(String str : stringList){
-            result = result + str+",";
-        }
-        System.out.println(result);
+    public void complex2(Cheng cheng, String projectId, Zhou zhou) {
+        System.out.println(projectId);
+    }
+
+
+
+    @Override
+    public void complex4(String projectId, Integer i, Zhou zhou, Generic<Cheng> chengGeneric) {
+        System.out.println(projectId);
+        System.out.println(i);
+        System.out.println(zhou);
+        System.out.println(chengGeneric);
+    }
+
+    @Override
+    public void list(List<String> l1, List<String> l2) {
+        System.out.println(l1);
+        System.out.println(l2);
+    }
+
+    @Override
+    public void list2(List<String> ids, Map<String, Zhou> map) {
+        System.out.println(ids);
+        System.out.println(map);
+    }
+
+    @Override
+    public void print(String str) {
+        System.out.println(str);
+    }
+
+    @Override
+    public void complex3(Zhou zhou, String projectId, Integer i, Generic<Cheng> chengGeneric) {
+        System.out.println(projectId);
+        System.out.println(zhou);
+        System.out.println(i);
+        System.out.println(chengGeneric);
+    }
+
+    @Override
+    public void complex5(Zhou zhou, String projectId, Cheng cheng, Integer i, Generic<Cheng> chengGeneric) {
+        System.out.println(zhou);
+        System.out.println(projectId);
+        System.out.println(cheng);
+        System.out.println(i);
+        System.out.println(chengGeneric);
     }
 }
