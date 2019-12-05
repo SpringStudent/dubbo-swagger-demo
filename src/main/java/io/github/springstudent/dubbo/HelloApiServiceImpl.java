@@ -12,7 +12,7 @@ import java.util.Map;
 /**
  * @author 周宁
  */
-@Service(interfaceClass = HelloApiService.class)
+@Service
 @Component
 public class HelloApiServiceImpl implements HelloApiService {
 
