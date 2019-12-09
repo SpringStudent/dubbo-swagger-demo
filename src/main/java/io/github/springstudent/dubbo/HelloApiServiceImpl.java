@@ -18,7 +18,7 @@ import java.util.Map;
 @Component
 public class HelloApiServiceImpl implements HelloApiService {
 
- /*  @Override
+    @Override
     public void complex(Cheng cheng, Zhou zhou) {
         System.out.println(cheng);
         System.out.println(zhou);
@@ -62,8 +62,6 @@ public class HelloApiServiceImpl implements HelloApiService {
         System.out.println(l1);
     }
 
-
-
     @Override
     public void list(List<String> ids, Map<String, Zhou> map) {
         System.out.println(ids);
@@ -95,7 +93,7 @@ public class HelloApiServiceImpl implements HelloApiService {
     @Override
     public String maptest(Map<Zhou, Generic<Cheng>> map) throws Exception {
         return map.toString();
-    }*/
+    }
 
     @Override
     public void arr(Zhou[] zhou, Generic<Cheng>[] chengGeneric) {

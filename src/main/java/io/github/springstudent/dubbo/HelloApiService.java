@@ -13,7 +13,7 @@ import java.util.Map;
  */
 public interface HelloApiService {
 
-    /*void complex(Cheng cheng, Zhou zhou);
+    void complex(Cheng cheng, Zhou zhou);
 
     void complex2(Cheng cheng, String projectId, Zhou zhou);
 
@@ -35,7 +35,7 @@ public interface HelloApiService {
 
     void multiGeneric(Generic<Cheng> chengGeneric,Generic<Zhou> zhouGeneric,List<Generic<Zhou>> generics);
 
-    String maptest(Map<Zhou,Generic<Cheng>> map)throws Exception;*/
+    String maptest(Map<Zhou,Generic<Cheng>> map)throws Exception;
 
     void arr(Zhou[] zhou,Generic<Cheng>[] chengGeneric);
 
