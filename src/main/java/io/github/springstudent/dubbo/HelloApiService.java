@@ -1,6 +1,7 @@
 package io.github.springstudent.dubbo;
 
 import io.github.springstudent.bean.Cheng;
+import io.github.springstudent.bean.Complex;
 import io.github.springstudent.bean.Generic;
 import io.github.springstudent.bean.Zhou;
 
@@ -12,7 +13,7 @@ import java.util.Map;
  */
 public interface HelloApiService {
 
-    void complex(Cheng cheng, Zhou zhou);
+    /*void complex(Cheng cheng, Zhou zhou);
 
     void complex2(Cheng cheng, String projectId, Zhou zhou);
 
@@ -28,11 +29,16 @@ public interface HelloApiService {
 
     void list(List<String> l1);
 
-    void list2(List<String> ids, Map<String, Zhou> map);
+    void list(List<String> ids, Map<String, Zhou> map);
 
     void list(List<Zhou> l1,List<Cheng> l2,List<Generic<Zhou>> generics);
 
     void multiGeneric(Generic<Cheng> chengGeneric,Generic<Zhou> zhouGeneric,List<Generic<Zhou>> generics);
 
+    String maptest(Map<Zhou,Generic<Cheng>> map)throws Exception;*/
+
+    void arr(Zhou[] zhou,Generic<Cheng>[] chengGeneric);
+
+    void complex(Complex complex);
 
 }

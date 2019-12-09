@@ -2,8 +2,10 @@ package io.github.springstudent.dubbo;
 
 import com.alibaba.dubbo.config.annotation.Service;
 import io.github.springstudent.bean.Cheng;
+import io.github.springstudent.bean.Complex;
 import io.github.springstudent.bean.Generic;
 import io.github.springstudent.bean.Zhou;
+import org.apache.commons.lang3.ArrayUtils;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -16,7 +18,7 @@ import java.util.Map;
 @Component
 public class HelloApiServiceImpl implements HelloApiService {
 
-   @Override
+ /*  @Override
     public void complex(Cheng cheng, Zhou zhou) {
         System.out.println(cheng);
         System.out.println(zhou);
@@ -63,7 +65,7 @@ public class HelloApiServiceImpl implements HelloApiService {
 
 
     @Override
-    public void list2(List<String> ids, Map<String, Zhou> map) {
+    public void list(List<String> ids, Map<String, Zhou> map) {
         System.out.println(ids);
         System.out.println(map);
     }
@@ -88,5 +90,21 @@ public class HelloApiServiceImpl implements HelloApiService {
         System.out.println(chengGeneric);
         System.out.println(zhouGeneric);
         System.out.println(generics);
+    }
+
+    @Override
+    public String maptest(Map<Zhou, Generic<Cheng>> map) throws Exception {
+        return map.toString();
+    }*/
+
+    @Override
+    public void arr(Zhou[] zhou, Generic<Cheng>[] chengGeneric) {
+        System.out.println(ArrayUtils.toString(zhou));
+        System.out.println(chengGeneric);
+    }
+
+    @Override
+    public void complex(Complex complex) {
+        System.out.println(complex);
     }
 }
