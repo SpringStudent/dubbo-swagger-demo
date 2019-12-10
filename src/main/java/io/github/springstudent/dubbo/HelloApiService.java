@@ -41,4 +41,6 @@ public interface HelloApiService {
 
     void complex(Complex complex,List<String[]> gan);
 
+    String[] split(List<String> message);
+
 }

@@ -106,4 +106,13 @@ public class HelloApiServiceImpl implements HelloApiService {
         System.out.println(complex);
         System.out.println(gan);
     }
+
+    @Override
+    public String[] split(List<String> message) {
+        String[] result = {};
+        for(String msg : message){
+            result = ArrayUtils.addAll(result,msg.split(","));
+        }
+        return result;
+    }
 }
