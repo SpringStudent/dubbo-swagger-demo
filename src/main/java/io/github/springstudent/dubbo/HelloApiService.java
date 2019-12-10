@@ -39,6 +39,6 @@ public interface HelloApiService {
 
     void arr(Zhou[] zhou,Generic<Cheng>[] chengGeneric);
 
-    void complex(Complex complex);
+    void complex(Complex complex,List<String[]> gan);
 
 }

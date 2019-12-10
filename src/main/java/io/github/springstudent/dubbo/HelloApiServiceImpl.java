@@ -102,7 +102,8 @@ public class HelloApiServiceImpl implements HelloApiService {
     }
 
     @Override
-    public void complex(Complex complex) {
+    public void complex(Complex complex, List<String[]> gan) {
         System.out.println(complex);
+        System.out.println(gan);
     }
 }
