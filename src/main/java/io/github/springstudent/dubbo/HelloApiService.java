@@ -35,7 +35,7 @@ public interface HelloApiService {
 
     void multiGeneric(Generic<Cheng> chengGeneric,Generic<Zhou> zhouGeneric,List<Generic<Zhou>> generics);
 
-    String maptest(Map<Zhou,Generic<Cheng>> map)throws Exception;
+    String maptest(Map<String,Generic<Cheng>> map)throws Exception;
 
     void arr(Zhou[] zhou,Generic<Cheng>[] chengGeneric);
 

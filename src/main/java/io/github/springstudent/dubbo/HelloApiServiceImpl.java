@@ -1,6 +1,7 @@
 package io.github.springstudent.dubbo;
 
 import com.alibaba.dubbo.config.annotation.Service;
+import com.alibaba.fastjson.JSON;
 import io.github.springstudent.bean.Cheng;
 import io.github.springstudent.bean.Complex;
 import io.github.springstudent.bean.Generic;
@@ -8,6 +9,7 @@ import io.github.springstudent.bean.Zhou;
 import org.apache.commons.lang3.ArrayUtils;
 import org.springframework.stereotype.Component;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -91,7 +93,7 @@ public class HelloApiServiceImpl implements HelloApiService {
     }
 
     @Override
-    public String maptest(Map<Zhou, Generic<Cheng>> map) throws Exception {
+    public String maptest(Map<String, Generic<Cheng>> map) throws Exception {
         return map.toString();
     }
 
