@@ -22,7 +22,7 @@ public class Swagger2 {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage(""))
+                .apis(RequestHandlerSelectors.basePackage("io.github.springstudent"))
                 .paths(PathSelectors.any())
                 .build();
     }
